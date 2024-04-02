@@ -33,42 +33,42 @@ button:last-child {
 	margin-bottom: 0;
 }
 
-#power_0 {
+.power_0 {
 	background-image: url('../Images/power_0.png');
 }
 
-#power_0:active {
+.power_0:active {
 	background-image: url('../Images/power_0_a.png');
 }
 
-#power_1 {
+.power_1 {
 	background-image: url('../Images/power_1.png');
 }
 
-#power_1:active {
+.power_1:active {
 	background-image: url('../Images/power_1_a.png');
 }
 
-#power_2 {
+.power_2 {
 	background-image: url('../Images/power_2.png');
 }
 
-#power_2:active {
+.power_2:active {
 	background-image: url('../Images/power_2_a.png');
 }
 
-#power_3 {
+.power_3 {
 	background-image: url('../Images/power_3.png');
 }
 
-#power_3:active {
+.power_3:active {
 	background-image: url('../Images/power_3_a.png');
 }
 
-#light {
+.light {
 	background-image: url('../Images/light.png');
 }
 
-#light:active {
+.light:active {
 	background-image: url('../Images/light_a.png');
 }
