@@ -20,7 +20,7 @@
 	<body>
 		<form method="post">
 			<fieldset class="container form-group">
-				<legend>Office</legend>
+				<legend>Office!</legend>
 				<button title="Fan speed 0" type="submit" class="btn btn-primary btn-lg power_0" name="o_power_0">Fan speed 0</button>
 				<button title="Fan speed 1" type="submit" class="btn btn-primary btn-lg power_1" name="o_power_1">Fan speed 1</button>
 				<button title="Fan speed 2" type="submit" class="btn btn-primary btn-lg power_2" name="o_power_2">Fan speed 2</button>
