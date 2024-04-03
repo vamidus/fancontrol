@@ -24,15 +24,15 @@ class Main {
 		const instruction = $target.attr("data-instruction");
 		// console.log(`area: ${area}`);
 		// console.log(`instruction: ${instruction}`);
-        $.ajax({
-            url: "fancontrol.php",
-            type: "post",
-            dataType: 'json',
-            data: { area, instruction },
-            success: function(result) {
-            	console.log(result);
-            }
-        });
+		$.ajax({
+			url: "fancontrol.php",
+			type: "post",
+			dataType: 'json',
+			data: { area, instruction },
+			success: function(result) {
+				console.log(result);
+			}
+		});
 	}
 	static CreateInstance(settings) {
 		const instance = new Main();
