@@ -12,6 +12,10 @@ body {
 	width: 100%;
 }
 
+body {
+	opacity: 0;
+}
+
 legend {
 	text-align: center;
 }
@@ -22,7 +26,6 @@ button[data-area] {
 }
 
 .carousel {
-	xopacity: 0;
 	padding: 16px;
 	width: 400px;
 }
