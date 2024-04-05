@@ -47,24 +47,20 @@ class Main {
 	setActivePage() {
 		const area = this.getCookie("area");
 		if (area) {
-			$("div.carousel-item[data-area]").removeClass("active");
+			$("div.carousel-item.active").removeClass("active");
 			$(`div.carousel-item[data-area="${area}"]`).addClass("active");
 		}
 		$("body").css("opacity", "1");
 	}
 	setCookie(key, value, expiry) {
-        let expires = new Date();
-        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
-        document.cookie = `${key}=${value};expires=${expires.toUTCString()}`;
-    }
-    getCookie(key) {
-        const keyValue = document.cookie.match(`(^|;) ?${key}=([^;]*)(;|$)`);
-        return keyValue ? keyValue[2] : null;
-    }
-    eraseCookie(key) {
-        const keyValue = getCookie(key);
-        setCookie(key, keyValue, '-1');
-    }
+		let expires = new Date();
+		expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+		document.cookie = `${key}=${value};expires=${expires.toUTCString()}`;
+	}
+	getCookie(key) {
+		const keyValue = document.cookie.match(`(^|;) ?${key}=([^;]*)(;|$)`);
+		return keyValue ? keyValue[2] : null;
+	}
 	static CreateInstance(settings) {
 		const instance = new Main();
 		instance.initialize(settings);
