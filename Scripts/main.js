@@ -5,8 +5,8 @@ class Main {
 	}
 	initialize(settings) {
 		if (settings) this.applySettings(settings);
-		this.setActivePage();
 		this.setup();
+		this.setActivePage();
 	}
 	applySettings(settings) {
 		$.extend(this, settings);
@@ -50,6 +50,7 @@ class Main {
 			$("div.carousel-item[data-area]").removeClass("active");
 			$(`div.carousel-item[data-area="${area}"]`).addClass("active");
 		}
+		this.$areaCarousel.fadeIn("fast");
 	}
 	setCookie(key, value, expiry) {
         let expires = new Date();

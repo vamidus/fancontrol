@@ -22,6 +22,7 @@ button[data-area] {
 }
 
 .carousel {
+	xopacity: 0;
 	padding: 16px;
 	width: 400px;
 }
