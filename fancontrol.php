@@ -14,7 +14,7 @@
 			.' -0 '.$ini['duration_0']
 			.' -1 '.$ini['duration_1']
 			.' -p '.$ini['pause']
-			.' -d '.$ini[$area].$ini[$instruction];
+			.' '.$ini[$area].$ini[$instruction];
 		shell_exec($command);
 	}
 ?>
