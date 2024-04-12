@@ -25,7 +25,7 @@ class Main {
 		this.$areaButtons.on("click", me.buttonsEventHandler.bind(me));
 	}
 	buttonsEventHandler(event) {
-		navigator.vibrate([1]);
+		navigator.vibrate([10]);
 		const $target = $(event.target);
 		const area = $target.attr("data-area");
 		const instruction = $target.attr("data-instruction");
